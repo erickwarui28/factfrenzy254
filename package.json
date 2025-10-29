@@ -21,7 +21,10 @@
     "login": "devvit login",
     "launch": "npm run build && npm run deploy && devvit publish",
     "prettier": "prettier-package-json --write ./package.json && prettier --write .",
-    "type-check": "tsc --build"
+    "type-check": "tsc --build",
+    "test": "vitest",
+    "test:run": "vitest --run",
+    "validate-questions": "npx tsx src/server/scripts/testValidation.ts"
   },
   "dependencies": {
     "@devvit/web": "0.12.1",
